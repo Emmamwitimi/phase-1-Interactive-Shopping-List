@@ -1,13 +1,25 @@
 Interactive Shopping List
+
+https://interactive-shopping-list-seven.vercel.app/
+
+
 Table of Contents
+
 Project Description
+
 Features
+
 Technologies Used
+
 Setup and Installation
+
 Usage
+
 File Structure
+
 Contributing
-License
+
+
 Project Description
 The Interactive Shopping List is a simple web application that allows users to manage their shopping lists efficiently. Users can add items, mark them as purchased, edit them, and delete them. The application also includes a feature to save the list to local storage.
 
