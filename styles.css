@@ -1,29 +1,34 @@
+/* Body and HTML styling for full height and centering */
 html, body {
   height: 100%;
   margin: 0;
   font-family: "Titillium Web", sans-serif;
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  background: linear-gradient(135deg, #3b82f6, #facc15); /* Blue and yellow gradient background */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Main content box styling */
 #main-content {
-  width: 90%;
-  max-width: 500px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 600px; /* Adjust for a wider box */
+  min-height: 400px; /* Add some height to the container */
+  background: #e12a2a; /* White background for the box */
+  padding: 30px;
+  border-radius: 20px; /* Smooth rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Add a box shadow for depth */
   text-align: center;
 }
 
+/* Main title styling */
 #main-content h1 {
   margin-bottom: 25px;
-  font-size: 28px;
-  color: #333;
+  font-size: 32px;
+  color: #1d4ed8; /* Darker blue text color */
 }
 
+/* Form styling */
 form {
   margin-bottom: 20px;
 }
@@ -38,62 +43,73 @@ form label {
 form input[type="text"] {
   width: calc(100% - 20px);
   padding: 12px;
-  border: 2px solid #ff7e5f;
-  border-radius: 8px;
+  border: 2px solid #1d4ed8; /* Blue border for input fields */
+  border-radius: 10px;
   margin-bottom: 15px;
   font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
+form input[type="text"]:focus {
+  border-color: #3b82f6; /* Brighter blue on focus */
+}
+
+/* Submit button styling */
 form input[type="submit"] {
   padding: 12px 20px;
-  background-color: #ff7e5f;
+  background-color: #facc15; /* Yellow button */
   border: none;
-  color: #fff;
-  border-radius: 8px;
+  color: #1d4ed8; /* Blue text */
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 form input[type="submit"]:hover {
-  background-color: #feb47b;
+  background-color: #fde047; /* Lighter yellow on hover */
   transform: scale(1.05);
 }
 
+/* List container */
 #list {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 #list h2 {
   margin-bottom: 15px;
-  font-size: 22px;
-  color: #333;
+  font-size: 24px;
+  color: #1d4ed8; /* Blue heading */
 }
 
+/* List items styling */
 #items li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  background: #fff;
+  background: #ffffff;
   margin-bottom: 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #items li:hover {
-  background-color: #ffefe6;
+  background-color: #e0f2fe; /* Light blue on hover */
   transform: scale(1.02);
 }
 
+/* List buttons */
 #items li button {
   padding: 8px 12px;
   font-size: 14px;
-  background-color: #ff7e5f;
+  background-color: #1d4ed8; /* Blue button */
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -102,15 +118,16 @@ form input[type="submit"]:hover {
 }
 
 #items li button:hover {
-  background-color: #feb47b;
+  background-color: #3b82f6; /* Lighter blue on hover */
 }
 
+/* Save button styling */
 #save {
-  padding: 10px 15px;
-  background-color: #333;
-  color: white;
+  padding: 12px 20px;
+  background-color: #1d4ed8; /* Blue save button */
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
   transition: transform 0.2s ease;
