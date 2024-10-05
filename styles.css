@@ -1,49 +1,121 @@
-html {
-    height: 100%;
-    width: 100%;
-    font-family: "Titillium Web", sans-serif;
-  }
-  
-  body {
-    min-height: 100%;
-    min-width: 100%;
-    background: linear-gradient(pink, violet);
-  }
-  
-  button {
-    font-size: 7px;
-  }
-  
-  #main-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #333;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 15px 20px 18px 18px;
-    border-radius: 5px;
-    box-shadow: 2px 5px 5px #333;
-  }
-  
-  #list {
-    margin: 10px;
-    border: 1px solid #333;
-    background: rgba(255, 255, 255, 0.75);
-    padding: 15px 20px 18px 18px;
-    border-radius: 5px;
-    box-shadow: 2px 5px 5px #333;
-  }
-  
-  #items li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
-  }
-  
-  #items li button {
-    margin-left: 10px;
-  }
-  
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#main-content h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 2px solid #ff7e5f;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  padding: 12px 20px;
+  background-color: #ff7e5f;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #feb47b;
+  transform: scale(1.05);
+}
+
+#list {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#list h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+#items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#items li:hover {
+  background-color: #ffefe6;
+  transform: scale(1.02);
+}
+
+#items li button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #ff7e5f;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#items li button:hover {
+  background-color: #feb47b;
+}
+
+#save {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+#save:hover {
+  transform: scale(1.05);
+}
